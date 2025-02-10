@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Add these lines at the beginning of the script
+echo "Starting configure_nginx.sh"
+echo "SERVER_NAME: ${SERVER_NAME}"
+echo "PROXY_PASS: ${PROXY_PASS}"
+echo "PORT: ${PORT}"
+
 # Variable to store the static content of nginx.conf
 nginx_conf="worker_processes 1;
 
