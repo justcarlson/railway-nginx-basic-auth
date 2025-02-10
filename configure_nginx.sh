@@ -57,3 +57,7 @@ nginx_conf+="
 echo "Generated nginx.conf:"
 echo "$nginx_conf"
 echo "$nginx_conf" > /etc/nginx/nginx.conf
+
+# Add these lines at the end of the script
+echo "Finished generating nginx.conf"
+cat /etc/nginx/nginx.conf
